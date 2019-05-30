@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Personal Survey</title>
-  </head>
-  <body>
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Personal Survey</title>
+</head>
+<body>
 
-      <div class="container">
-        <h1>Tell us about your favorite things!</h1>
-        <div>
-          <form id="fav-things-form">
-            <div class="form-group">
-              <label for="color">What's your favorite color?</label>
-              <input id="color" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="food">What's your favorite food?</label>
-              <input id="food" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="animal">What's your favorite animal?</label>
-              <input id="animal" class="form-control" type="text">
-            </div>
-
-            <button type="submit" class="btn">CLick Here!</button>
-
-          </form>
+  <div class="container">
+    <h1>Tell us about your favorite things!</h1>
+    <div>
+      <form id="fav-things-form">
+        <div class="form-group">
+          <label for="color">What's your favorite color?</label>
+          <input id="color" class="form-control" type="text">
+        </div>
+        <div class="radio" id="fav-things-form">
+        <p>What is your favorite food?</p>
+        <label>
+            <input type="radio" name="food" value="thai" checked>
+            Thai
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="hotdogs">
+            hotdogs
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="burgers">
+            Burgers
+          </label>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite beverage?</p>
+          <select class="form-control" id="beverage">
+            <option>Coffee</option>
+            <option>Tea</option>
+            <option>Kombucha</option>
+            <option>Water</option>
+          </select>
         </div>
 
-        <div id="your-favs">
-        <p>Here is your favorite things that you chose, your favorite color is <span class="color"></span> here is your favorite food <span class="food"></span> here is your favorite animal <span class="animal"></span>.
-        </p>
-        </div>
+        <button type="submit" class="btn">CLick Here!</button>
 
-    </body>
+      </form>
+    </div>
+
+    <div id="your-favs">
+      <p>Here is your favorite things that you chose, your favorite color is <span class="color"></span> here is your favorite food <span class="food"></span> here is your favorite animal <span class="animal"></span>.
+      </p>
+    </div>
+
+  </body>
   </html>
